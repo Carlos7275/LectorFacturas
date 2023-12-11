@@ -1,0 +1,35 @@
+<cfdi:Comprobante Version="3.3" Serie="PLMO" Folio="37108" Fecha="2020-04-18T08:13:35"
+    Sello="grExUNR4XA09JJIi8Qz4h2aMroc6WNChVM1ZuNGgF5BJ4YQVSi37OyUbWhe3Xtc/JjthPB9XLgeGqcalObNnQicDDqA9wFEqnvCAdrl/qlnLU02ItyDzhrfwVRZkxRcQHmgQMkqXRRhOYLkuXN9b38bZnTEQ2k9raXoWKN7QNXFvAyU2dlWSGvt13dFMD5mrdRhk+vqwluUvd0WVPhAeZVRt2Xfwa8FJVNM0BGEsvferKeSRPn1pEneI/OttmpDAfWUEto5eDS3J+EMUZl3mQ3MKsLBif5xcYDULWQf7lB9hO3K71R248TqQp3JESaSb8DKthFKmmdd6l31QsVTO6g=="
+    NoCertificado="00001000000408127568"
+    Certificado="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"
+    SubTotal="0" Moneda="XXX" Total="0" TipoDeComprobante="P" LugarExpedicion="81223"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd
+                        http://www.sat.gob.mx/Pagos http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos10.xsd"
+    xmlns:pago10="http://www.sat.gob.mx/Pagos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+    <cfdi:Emisor Rfc="CIN960904FQ2" Nombre="CT INTERNACIONAL DEL NOROESTE, S.A. DE C.V."
+        RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="METM821031U93" Nombre="MENDIVIL TORRES JOSE MIGUEL" UsoCFDI="P01" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago"
+            ValorUnitario="0" Importe="0" />
+    </cfdi:Conceptos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital Version="1.1" UUID="4c6783e7-9468-4d9c-a9f1-5999d71a606e"
+            FechaTimbrado="2020-04-18T10:12:32" RfcProvCertif="CFA110411FW5"
+            SelloCFD="grExUNR4XA09JJIi8Qz4h2aMroc6WNChVM1ZuNGgF5BJ4YQVSi37OyUbWhe3Xtc/JjthPB9XLgeGqcalObNnQicDDqA9wFEqnvCAdrl/qlnLU02ItyDzhrfwVRZkxRcQHmgQMkqXRRhOYLkuXN9b38bZnTEQ2k9raXoWKN7QNXFvAyU2dlWSGvt13dFMD5mrdRhk+vqwluUvd0WVPhAeZVRt2Xfwa8FJVNM0BGEsvferKeSRPn1pEneI/OttmpDAfWUEto5eDS3J+EMUZl3mQ3MKsLBif5xcYDULWQf7lB9hO3K71R248TqQp3JESaSb8DKthFKmmdd6l31QsVTO6g=="
+            SelloSAT="l1ZBSxTecl54A0GcQiVo36naazQqu+ZHR5OxuAgoKE2BEQah0vgDmSGkyTMo32BpNR2oTpzKbJ/A85nr2dr2Dff3wfOica1vX7VfiN2s/SgLJZAQ8Vh6JGKkpW13pImvRc65deX97BNYkqZ3XyXSiboXG951SFGzfNXfE6yrEOtnvqD+UKO5r8cYbeNpc2jIZkuRVL2wTfcwyt5HOLUnshkrG7+L8Ii8C99y3CNHecoE255QCjlPFm/9T2tBz1VUrfhl3B+cAiaQeSo5u2JWK/a/nEuL39dC51LgkRMslIy+B6FGK1RAPNWMJKOVLHIeA3Ii7dUQskHbLFu1tBPJog=="
+            NoCertificadoSAT="00001000000407908743"
+            xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/timbrefiscaldigital/TimbreFiscalDigitalv11.xsd"
+            xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" />
+        <pago10:Pagos Version="1.0">
+            <pago10:Pago FechaPago="2020-04-17T12:00:00" FormaDePagoP="03" MonedaP="MXN"
+                Monto="8772.04" NumOperacion="37108">
+                <pago10:DoctoRelacionado Folio="360839"
+                    IdDocumento="e753d848-f51c-4695-8741-5999d71a4b33" ImpPagado="8772.04"
+                    ImpSaldoAnt="8772.04" ImpSaldoInsoluto="0.00" MetodoDePagoDR="PPD"
+                    MonedaDR="MXN" NumParcialidad="1" Serie="LMO" />
+            </pago10:Pago>
+        </pago10:Pagos>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

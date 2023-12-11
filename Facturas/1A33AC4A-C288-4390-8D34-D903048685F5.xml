@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    Certificado="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"
+    Fecha="2020-04-03T16:36:00" Folio="85869" FormaPago="01" LugarExpedicion="81200"
+    MetodoPago="PUE" Moneda="MXN" NoCertificado="00001000000404449240"
+    Sello="I6FLdYQrAp3u4WpLSnkw27EVXZ0AUcco+8Z9deFx/kkPpLSDKAXwYr9HorHTTOzeMhfpWmXsH0/QqZjnwEpgHR6kAkNSHZV6Km5QorMQlhQGz1RexJfBPEVeTuqGcmO11ZNKfi9SAKEzxM5CCeHlZ8xYvCoeH/PO2dqy3cVZhsTK+2Xe85aA6KpED9hnHqQdF7OGf8o8I0yQLnFUK5jdJyMrJwpWS0fF7vdSrtOKZzwR4+6bXt7oHXDobIQloFkUZ38VatIk7mq/1QDL640blOQOhNBllefnyYfPEm1oOCw7Jjjhx2WUmoWscjdRwP+ge1stIdZRGsXT0XCfaUJ/iQ=="
+    SubTotal="1934.51" TipoDeComprobante="I" Total="2244.03" Version="3.3"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd">
+    <cfdi:Emisor Nombre="AGENCIA AUTOMOTRIZ DE LOS MOCHIS S.A. DE .C.V" RegimenFiscal="601"
+        Rfc="AAM820611RA9" />
+    <cfdi:Receptor Nombre="MENDIVIL TORRES JOSE MIGUEL" Rfc="METM821031U93" UsoCFDI="G03" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto Cantidad="5.00" ClaveProdServ="15121501" ClaveUnidad="H87"
+            Descripcion="ACEITE  10W30 MB" Importe="487.50" NoIdentificacion="EML103TA7CDD"
+            Unidad="PIEZA" ValorUnitario="97.500000">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="487.50" Importe="78.00" Impuesto="002"
+                        TasaOCuota="0.160000" TipoFactor="Tasa" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto Cantidad="1.00" ClaveProdServ="40161504" ClaveUnidad="H87"
+            Descripcion="FILTRO ACEITE" Importe="205.00" NoIdentificacion="1520865F0E"
+            Unidad="PIEZA" ValorUnitario="205.000000">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="205.00" Importe="32.80" Impuesto="002"
+                        TasaOCuota="0.160000" TipoFactor="Tasa" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto Cantidad="1.00" ClaveProdServ="31161800" ClaveUnidad="H87"
+            Descripcion="ARANDELA CARTER" Importe="20.00" NoIdentificacion="11026JA00A"
+            Unidad="PIEZA" ValorUnitario="20.000000">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="20.00" Importe="3.20" Impuesto="002" TasaOCuota="0.160000"
+                        TipoFactor="Tasa" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto Cantidad="1.00" ClaveProdServ="25173903" ClaveUnidad="H87"
+            Descripcion="PROTECT TERMINA" Importe="115.51" NoIdentificacion="NIMEXU8Q10DD"
+            Unidad="PIEZA" ValorUnitario="115.510000">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="115.51" Importe="18.48" Impuesto="002"
+                        TasaOCuota="0.160000" TipoFactor="Tasa" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto Cantidad="1.00" ClaveProdServ="78181500" ClaveUnidad="E48"
+            Descripcion="SERVICIO 10,000 KMS" Importe="430.00" NoIdentificacion="T10"
+            Unidad="SERVICIO" ValorUnitario="430.000000">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="430.00" Importe="68.80" Impuesto="002"
+                        TasaOCuota="0.160000" TipoFactor="Tasa" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+        <cfdi:Concepto Cantidad="1.23" ClaveProdServ="78181500" ClaveUnidad="E48"
+            Descripcion="LIMPIEZA DE CAMARA DE COMB CON HIDROGENO" Importe="676.50"
+            NoIdentificacion="DCA" Unidad="SERVICIO" ValorUnitario="550.000000">
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="676.50" Importe="108.24" Impuesto="002"
+                        TasaOCuota="0.160000" TipoFactor="Tasa" />
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosTrasladados="309.52">
+        <cfdi:Traslados>
+            <cfdi:Traslado Importe="309.52" Impuesto="002" TasaOCuota="0.160000" TipoFactor="Tasa" />
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital"
+            xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd"
+            Version="1.1" UUID="1A33AC4A-C288-4390-8D34-D903048685F5"
+            SelloCFD="I6FLdYQrAp3u4WpLSnkw27EVXZ0AUcco+8Z9deFx/kkPpLSDKAXwYr9HorHTTOzeMhfpWmXsH0/QqZjnwEpgHR6kAkNSHZV6Km5QorMQlhQGz1RexJfBPEVeTuqGcmO11ZNKfi9SAKEzxM5CCeHlZ8xYvCoeH/PO2dqy3cVZhsTK+2Xe85aA6KpED9hnHqQdF7OGf8o8I0yQLnFUK5jdJyMrJwpWS0fF7vdSrtOKZzwR4+6bXt7oHXDobIQloFkUZ38VatIk7mq/1QDL640blOQOhNBllefnyYfPEm1oOCw7Jjjhx2WUmoWscjdRwP+ge1stIdZRGsXT0XCfaUJ/iQ=="
+            NoCertificadoSAT="00001000000407611499" FechaTimbrado="2020-04-03T17:36:20"
+            SelloSAT="xXTIPaK7jFoQ82z0Zy39uYcYDyvuhJNaJdFUTozdtyl62wangP3iOif8RLtBPAYfePZQzQmbCoJSt51ibHarTOqnx6sk0UHZYWP0ag9PJv9sZ1iXz5OkDjcAo3x97igkExGYXlCbiXxFBRCUVz1VuJr+tMVL9s9dMO6M6022I/PrOgXnTO8ISLoAU/Bart9s5Dt03nmxtpjrfVrfa4wM30EOrl5x40qhb2K8RufQQ/gSKq2OCtDyYMDE/5rvld6odgoelgGzc3zWWSYUowWRMHjYQvrJOA6fUI5XKchJPzrCVSQCwtAML0hZJTxCzgqHkJpiGf7+ELNqBr2KE54rfA=="
+            RfcProvCertif="SIF0403229F9" />
+    </cfdi:Complemento>
+</cfdi:Comprobante>

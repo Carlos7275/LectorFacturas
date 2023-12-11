@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3"
+    xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd
+                        http://www.sat.gob.mx/Pagos http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos10.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="3.3" Serie="BLAMENMX"
+    Folio="112672" Fecha="2020-04-29T23:58:01"
+    Sello="bFlevfAtnsDvAjHz25Jm4FLbJPzewLVEi3XZB9sClH2TZGb/TBvr3ZLzHeYJcj/IIq/tEi/f/0Qd4/UyGjL19fEPmukJ0WV6SLgEpnBBkcAVRqZbvnnozmWNIpMSUUCzBULaFQ9GKekGnfJKYLIC734qTi+LHK8jgxz78uEJg/YEvs3c7y+QbXGCk/tm30h1HGjmJwTBhDIvGyD+AXOjtzNWCrxHBynxGucwwKWOOrFBPtwGbymMMfAksFtgRLVIVFDXQxBurCNPlYl3Kkp4xoWr4WysL2lFD9jD0taGnCiri4MsyvlNFXaiFQ+q951xab71Gq09G7nK/qv3HjsOoA=="
+    NoCertificado="00001000000404239564"
+    Certificado="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"
+    SubTotal="0" Moneda="XXX" Total="0" TipoDeComprobante="P" LugarExpedicion="82100">
+    <cfdi:Emisor Rfc="BLA941202I57" Nombre="BLAZKI SA DE CV" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="METM821031U93" Nombre="Jose Miguel Mendivil Torres" UsoCFDI="P01" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago"
+            ValorUnitario="0" Importe="0" />
+    </cfdi:Conceptos>
+    <cfdi:Complemento>
+        <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="1.1"
+            UUID="1A7A3F9F-243D-4CC1-94BE-E29BAF0DCD6E" FechaTimbrado="2020-04-30T16:57:56"
+            RfcProvCertif="BUZ021107UG0"
+            SelloCFD="bFlevfAtnsDvAjHz25Jm4FLbJPzewLVEi3XZB9sClH2TZGb/TBvr3ZLzHeYJcj/IIq/tEi/f/0Qd4/UyGjL19fEPmukJ0WV6SLgEpnBBkcAVRqZbvnnozmWNIpMSUUCzBULaFQ9GKekGnfJKYLIC734qTi+LHK8jgxz78uEJg/YEvs3c7y+QbXGCk/tm30h1HGjmJwTBhDIvGyD+AXOjtzNWCrxHBynxGucwwKWOOrFBPtwGbymMMfAksFtgRLVIVFDXQxBurCNPlYl3Kkp4xoWr4WysL2lFD9jD0taGnCiri4MsyvlNFXaiFQ+q951xab71Gq09G7nK/qv3HjsOoA=="
+            NoCertificadoSAT="00001000000404347791"
+            SelloSAT="toOrGBagdYm4Z6niXdsv16hNcsb5YXmZfDwiJtLWGU6GDJznmb+d2OfznMnsB2hhSMfMhNtjtbBrMjUCNfzXMzgOrMI/fWGqQSRrN1KP78w7iKCAuuVqKn9zn+Lfqf1p+dtZN35Edb6el/Il4/OE/NFRhZ4JgF17zRR3P1ictRPucaLkjjGSiKNlH8UWdOzNXPX28ZQpqZukBKSmQNTDjBq9zx3dUfVcf76uTW04TCgn8XE70tA0zkoL0v4nD0+E0wrP4dnEF7lloNLQwJckXVHFrcwkdXII6B29hgka0NjRi9HPj9aHIMh1Q3M8PFn1kLTXQl1ShmJ2deNynw12Zg=="
+            xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" />
+        <pago10:Pagos xmlns:pago10="http://www.sat.gob.mx/Pagos" Version="1.0">
+            <pago10:Pago FechaPago="2020-04-29T00:00:00" FormaDePagoP="04" MonedaP="MXN"
+                Monto="2193.14" NumOperacion="00037" RfcEmisorCtaOrd="BLA941202I57">
+                <pago10:DoctoRelacionado IdDocumento="5C43C9FD-BB9B-46D8-99D1-F1B001F00B0A"
+                    Serie="BLAMENMX" Folio="112672" MonedaDR="MXN" MetodoDePagoDR="PPD"
+                    NumParcialidad="37" ImpSaldoAnt="217098.00" ImpPagado="2193.14"
+                    ImpSaldoInsoluto="214904.86" />
+            </pago10:Pago>
+        </pago10:Pagos>
+    </cfdi:Complemento>
+</cfdi:Comprobante>

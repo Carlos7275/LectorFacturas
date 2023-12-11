@@ -1,0 +1,9 @@
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\bin\Debug\LectorFacturas.exe.config
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\bin\Debug\LectorFacturas.exe
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\bin\Debug\LectorFacturas.pdb
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.csprojResolveAssemblyReference.cache
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.Form1.resources
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.Properties.Resources.resources
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.csproj.GenerateResource.Cache
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.exe
+c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.pdb

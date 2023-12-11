@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><cfdi:Comprobante xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" Version="4.0" Serie="M" Folio="1667" Fecha="2023-12-06T12:55:04" Sello="TT1Rizg3qCalkg8wyadxsezLbcxQj3/WMBvqDr5HkDbDPkDkO+jrVpiYFRhaxQ4zYp1a/gw6GHCVuOUkJVNF2xW+1E7Vn2rDwxQCaH1kxmYKo19IC3WeY1oqgWTuNj0hLi92pc49UlHbixppfM5WZptmu8nRx6CkPpfOSVwRJJY/joKy/v99wHnKs5lDu/n3P9JNBfhBpzedD0/mM08eYUk5TnuHSB2MUD2XcUdW8JCXbGrRJDBVXdNAmoiMHDYqAEOeMAA15wtOcO5bGYCThDRs8pmCUjTtBQmd08BQJAY9scvziU8+9ysRCnZhNT4kVBh3HJwhX4hGN12PPFm6Kg==" FormaPago="99" SubTotal="2802.41" Moneda="MXN" TipoCambio="1" Total="3250.79" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="81238" Certificado="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" NoCertificado="00001000000504784937" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd">
+  <cfdi:Emisor Rfc="METM821031U93" Nombre="JOSE MIGUEL MENDIVIL TORRES" RegimenFiscal="612" />
+  <cfdi:Receptor Rfc="BAM991111B47" Nombre="BANCO DE ALIMENTOS DE LOS MOCHIS" DomicilioFiscalReceptor="81256" RegimenFiscalReceptor="603" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="81112300" Cantidad="1" ClaveUnidad="E48" Unidad="SERVICIO" Descripcion="Instalación y puesta en marcha de switch" ValorUnitario="131.03" Importe="131.03" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="131.03" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="20.96" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="43222612" Cantidad="1" ClaveUnidad="H87" Unidad="PIEZA" Descripcion="Switch no administrable para escritorio de 5 puertos 10/100 Mbps" ValorUnitario="300.00" Importe="300.00" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="300" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="48" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="44103103" Cantidad="8" ClaveUnidad="H87" Unidad="PIEZAS" Descripcion="Tóner compatible HP CF283A" ValorUnitario="215.58" Importe="1724.64" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1724.64" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="275.9424" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="44103103" Cantidad="3" ClaveUnidad="H87" Unidad="PIEZAS" Descripcion="Tóner compatible HP Q2612A" ValorUnitario="215.58" Importe="646.74" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="646.74" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="103.4784" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="448.38">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="2802.41" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="448.38" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="604227b2-181d-49ac-a68b-e80d4f349190" FechaTimbrado="2023-12-06T13:55:05" RfcProvCertif="LSO1306189R5" SelloCFD="TT1Rizg3qCalkg8wyadxsezLbcxQj3/WMBvqDr5HkDbDPkDkO+jrVpiYFRhaxQ4zYp1a/gw6GHCVuOUkJVNF2xW+1E7Vn2rDwxQCaH1kxmYKo19IC3WeY1oqgWTuNj0hLi92pc49UlHbixppfM5WZptmu8nRx6CkPpfOSVwRJJY/joKy/v99wHnKs5lDu/n3P9JNBfhBpzedD0/mM08eYUk5TnuHSB2MUD2XcUdW8JCXbGrRJDBVXdNAmoiMHDYqAEOeMAA15wtOcO5bGYCThDRs8pmCUjTtBQmd08BQJAY9scvziU8+9ysRCnZhNT4kVBh3HJwhX4hGN12PPFm6Kg==" NoCertificadoSAT="00001000000509846663" SelloSAT="NjM1raV+529KaSxeypboXwSgCTYl0HFPAR9WDa2Nv1othFVSIj/MYwOXSrGTaYUsxdgXx5inSGRILM/+p5qxOOeuyNRNV7tqYzke0nBh+hXnqR2mfeEdoVHixe6p9wS0m9I9s00Jf6BZx4rM96Z3QHe4u5P/S36rMym9XpshBXFCbHjLTdux0D4Xxngy1XQCDbC8UZvQqg4Wj8mzul3U7IQ2vOFYJvnAfQPQmr/Ximhy9yrxrvhtmbzijOjUGLN3F/vXKDzwR0GvVMq3hSauDFfO95gqhcIqVgjEtFuXH3q/XvEa5sENqPbxJQiHtNMivcajHpdcNR88q2+KHrOr0w==" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

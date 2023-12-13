@@ -1,13 +1,8 @@
 ﻿
-using LectorFacturas.Modelos.Factura;
 using LectorFacturas.Modelos.Translado4;
 using LectorXML.Modelos.Translado;
-using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Xml.Serialization;
 
@@ -16,20 +11,25 @@ namespace LectorFacturas.Clases
     class CFDILector
     {
         private string _version;
-        private bool _esTranslado ;
+        private bool _esTranslado;
 
-        public bool  EsTranslado(){
+        public bool EsTranslado()
+        {
             return _esTranslado;
         }
-       private void ComprobarArchivo(string url)
+        private void ComprobarArchivo(string url)
         {
             XDocument xmlDoc = XDocument.Load(url);
             _version = xmlDoc.Root.Attribute("Version").Value;
             XElement trasladoElement = xmlDoc.Descendants().FirstOrDefault(e => e.Name.LocalName == "Traslado");
-            _esTranslado=(trasladoElement!=null)?true:false;
+            _esTranslado = (trasladoElement != null);
         }
 
-       public dynamic LeerFactura(string url)
+        public string ObtenerVersion()
+        {
+            return _version;
+        }
+        public dynamic LeerFactura(string url)
         {
             this.ComprobarArchivo(url);
             if (!_esTranslado && _version.Contains("3.3"))
@@ -41,7 +41,7 @@ namespace LectorFacturas.Clases
                     return comprobante;
                 }
             }
-            else if( _esTranslado && _version.Contains("3.3"))
+            else if (_esTranslado && _version.Contains("3.3"))
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(ComprobanteTranslado));
                 using (FileStream fs = new FileStream(url, FileMode.Open))

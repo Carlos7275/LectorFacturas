@@ -7,3 +7,13 @@ c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFactur
 c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.csproj.GenerateResource.Cache
 c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.exe
 c:\users\carlo\documents\visual studio 2013\Projects\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.pdb
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\bin\Debug\LectorFacturas.exe.config
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\bin\Debug\LectorFacturas.exe
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\bin\Debug\LectorFacturas.pdb
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.Form1.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.Properties.Resources.resources
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.csproj.GenerateResource.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.exe
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.pdb

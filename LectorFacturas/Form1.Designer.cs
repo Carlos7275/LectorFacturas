@@ -28,28 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabla = new System.Windows.Forms.DataGridView();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openDialog = new System.Windows.Forms.OpenFileDialog();
-            this.Btn_Examinar = new System.Windows.Forms.Button();
-            this.Btn_Limpiar = new System.Windows.Forms.Button();
-            this.lbl_totalEmitidas = new System.Windows.Forms.Label();
-            this.lbl_totalRecibidas = new System.Windows.Forms.Label();
+            this.unboundSource1 = new DevExpress.Data.UnboundSource(this.components);
+            this.unboundSource2 = new DevExpress.Data.UnboundSource(this.components);
+            this.tabla = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.btn_examinar = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_limpiar = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.unboundSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unboundSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tabla
-            // 
-            this.tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabla.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.tabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabla.Location = new System.Drawing.Point(13, 122);
-            this.tabla.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabla.Name = "tabla";
-            this.tabla.RowHeadersWidth = 62;
-            this.tabla.Size = new System.Drawing.Size(972, 255);
-            this.tabla.TabIndex = 0;
             // 
             // openDialog
             // 
@@ -58,74 +55,100 @@
             this.openDialog.Filter = "|*.xml";
             this.openDialog.Multiselect = true;
             // 
-            // Btn_Examinar
+            // tabla
             // 
-            this.Btn_Examinar.Location = new System.Drawing.Point(48, 35);
-            this.Btn_Examinar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Btn_Examinar.Name = "Btn_Examinar";
-            this.Btn_Examinar.Size = new System.Drawing.Size(132, 45);
-            this.Btn_Examinar.TabIndex = 1;
-            this.Btn_Examinar.Text = "Examinar";
-            this.Btn_Examinar.UseVisualStyleBackColor = true;
-            this.Btn_Examinar.Click += new System.EventHandler(this.button1_Click);
+            this.tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabla.Location = new System.Drawing.Point(12, 100);
+            this.tabla.MainView = this.gridView1;
+            this.tabla.Name = "tabla";
+            this.tabla.Size = new System.Drawing.Size(660, 242);
+            this.tabla.TabIndex = 9;
+            this.tabla.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1,
+            this.gridView3,
+            this.gridView2});
             // 
-            // Btn_Limpiar
+            // gridView1
             // 
-            this.Btn_Limpiar.Location = new System.Drawing.Point(254, 43);
-            this.Btn_Limpiar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Btn_Limpiar.Name = "Btn_Limpiar";
-            this.Btn_Limpiar.Size = new System.Drawing.Size(112, 35);
-            this.Btn_Limpiar.TabIndex = 2;
-            this.Btn_Limpiar.Text = "Limpiar";
-            this.Btn_Limpiar.UseVisualStyleBackColor = true;
-            this.Btn_Limpiar.Click += new System.EventHandler(this.Btn_Limpiar_Click);
+            this.gridView1.GridControl = this.tabla;
+            this.gridView1.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SubTotal", null, "")});
+            this.gridView1.Name = "gridView1";
             // 
-            // lbl_totalEmitidas
+            // gridView3
             // 
-            this.lbl_totalEmitidas.AutoSize = true;
-            this.lbl_totalEmitidas.Location = new System.Drawing.Point(451, 82);
-            this.lbl_totalEmitidas.Name = "lbl_totalEmitidas";
-            this.lbl_totalEmitidas.Size = new System.Drawing.Size(298, 20);
-            this.lbl_totalEmitidas.TabIndex = 3;
-            this.lbl_totalEmitidas.Text = "Suma de Importes de Facturas Emitidas:";
+            this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1});
+            this.gridView3.GridControl = this.tabla;
+            this.gridView3.Name = "gridView3";
+            this.gridView3.OptionsView.ShowFooter = true;
             // 
-            // lbl_totalRecibidas
+            // gridColumn1
             // 
-            this.lbl_totalRecibidas.AutoSize = true;
-            this.lbl_totalRecibidas.Location = new System.Drawing.Point(451, 43);
-            this.lbl_totalRecibidas.Name = "lbl_totalRecibidas";
-            this.lbl_totalRecibidas.Size = new System.Drawing.Size(307, 20);
-            this.lbl_totalRecibidas.TabIndex = 4;
-            this.lbl_totalRecibidas.Text = "Suma de Importes de Facturas Recibidas:";
+            this.gridColumn1.Caption = "gridColumn1";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            // 
+            // gridView2
+            // 
+            this.gridView2.GridControl = this.tabla;
+            this.gridView2.Name = "gridView2";
+            // 
+            // btn_examinar
+            // 
+            this.btn_examinar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_examinar.ImageOptions.Image")));
+            this.btn_examinar.Location = new System.Drawing.Point(22, 12);
+            this.btn_examinar.Name = "btn_examinar";
+            this.btn_examinar.Size = new System.Drawing.Size(101, 42);
+            this.btn_examinar.TabIndex = 11;
+            this.btn_examinar.Text = "Examinar";
+            this.btn_examinar.Click += new System.EventHandler(this.btn_examinar_Click);
+            // 
+            // btn_limpiar
+            // 
+            this.btn_limpiar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_limpiar.ImageOptions.Image")));
+            this.btn_limpiar.Location = new System.Drawing.Point(149, 13);
+            this.btn_limpiar.Name = "btn_limpiar";
+            this.btn_limpiar.Size = new System.Drawing.Size(134, 41);
+            this.btn_limpiar.TabIndex = 12;
+            this.btn_limpiar.Text = "Limpiar Datos";
+            this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1006, 391);
-            this.Controls.Add(this.lbl_totalRecibidas);
-            this.Controls.Add(this.lbl_totalEmitidas);
-            this.Controls.Add(this.Btn_Limpiar);
-            this.Controls.Add(this.Btn_Examinar);
+            this.ClientSize = new System.Drawing.Size(696, 370);
+            this.Controls.Add(this.btn_limpiar);
+            this.Controls.Add(this.btn_examinar);
             this.Controls.Add(this.tabla);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
+            this.SurfaceMaterial = DevExpress.XtraEditors.SurfaceMaterial.Acrylic;
             this.Text = "Lector de Facturas";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.unboundSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unboundSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView tabla;
         private System.Windows.Forms.OpenFileDialog openDialog;
-        private System.Windows.Forms.Button Btn_Examinar;
-        private System.Windows.Forms.Button Btn_Limpiar;
-        private System.Windows.Forms.Label lbl_totalEmitidas;
-        private System.Windows.Forms.Label lbl_totalRecibidas;
+        private DevExpress.Data.UnboundSource unboundSource1;
+        private DevExpress.Data.UnboundSource unboundSource2;
+        private DevExpress.XtraGrid.GridControl tabla;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton btn_examinar;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        private DevExpress.XtraEditors.SimpleButton btn_limpiar;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
     }
 }
 

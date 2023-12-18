@@ -8,6 +8,7 @@ using LectorFacturas.Modelos.Translado4;
 using LectorXML.Modelos.Translado;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -27,6 +28,21 @@ namespace LectorFacturas
             labelControl1.Text = $"Version: {Enviroment.Version}";
         }
 
+        public bool ExisteFactura(string folio)
+        {
+            var existeEnFactura = _factura.Any(x => x.Folio == folio);
+
+            var existeEnFactura4 = _factura4.Any(x => x.Folio == folio);
+
+            var existeEnTranslados = _translados.Any(x => x.Folio == folio);
+
+            var existeEnTranslados4 = _translados4.Any(x => x.Folio == folio);
+
+            return existeEnFactura ||
+                    existeEnFactura4 ||
+                    existeEnTranslados ||
+                    existeEnTranslados4;
+        }
         public void InicializarGrid()
         {
             var datos = Utilidades.CombinarTablas(
@@ -217,24 +233,28 @@ namespace LectorFacturas
         {
             CFDILector lector = new CFDILector();
             var objeto = lector.LeerFactura(file);
+
             if (objeto != null)
             {
-                if (lector.ObtenerVersion().Contains("3.3"))
+                if (!ExisteFactura(objeto.Folio))
                 {
-                    if (!lector.EsTranslado())
-                        _factura.Add((Comprobante)objeto);
+                    if (lector.ObtenerVersion().Contains("3.3"))
+                    {
+                        if (!lector.EsTranslado())
+                            _factura.Add((Comprobante)objeto);
 
-                    else
-                        _translados.Add((ComprobanteTranslado)objeto);
-                }
+                        else
+                            _translados.Add((ComprobanteTranslado)objeto);
+                    }
 
-                if (lector.ObtenerVersion().Contains("4.0"))
-                {
-                    if (!lector.EsTranslado())
-                        _factura4.Add((Comprobante4)objeto);
+                    if (lector.ObtenerVersion().Contains("4.0"))
+                    {
+                        if (!lector.EsTranslado())
+                            _factura4.Add((Comprobante4)objeto);
 
-                    else if (lector.EsTranslado())
-                        _translados4.Add((ComprobanteTranslado4)objeto);
+                        else if (lector.EsTranslado())
+                            _translados4.Add((ComprobanteTranslado4)objeto);
+                    }
                 }
             }
         }

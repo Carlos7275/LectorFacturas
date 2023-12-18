@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Enviroment.cs" />
     <Compile Include="Clases\LectorFacturas.cs" />
     <Compile Include="Clases\Utilidades.cs" />
     <Compile Include="Form1.cs">

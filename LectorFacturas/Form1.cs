@@ -8,8 +8,6 @@ using LectorFacturas.Modelos.Translado4;
 using LectorXML.Modelos.Translado;
 using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -26,6 +24,7 @@ namespace LectorFacturas
         public Form1()
         {
             InitializeComponent();
+            labelControl1.Text = $"Version: {Enviroment.Version}";
         }
 
         public void InicializarGrid()
@@ -54,11 +53,9 @@ namespace LectorFacturas
 
             tabla.DataSource = datos;
 
-
             GridView gridView = gridView1;
             gridView.OptionsView.ShowGroupPanel = true;
             gridView.OptionsView.ShowFooter = true;
-
 
             gridView.BestFitColumns();
             gridView1.OptionsBehavior.Editable = false;
@@ -84,7 +81,6 @@ namespace LectorFacturas
 
         public void InicializarDetalles()
         {
-
             List<FacturaDetalle> lista = new List<FacturaDetalle>();
 
             foreach (var item in _factura)
@@ -99,6 +95,7 @@ namespace LectorFacturas
                     Cantidad = item.Conceptos.Concepto.Cantidad,
                     Importe = item.Conceptos.Concepto.Importe,
                     ValorUnitario = item.Conceptos.Concepto.ValorUnitario,
+                    Fecha = DateTime.Parse(item.Fecha).ToString("dd/MM/yyyy hh:mm:ss")
                 });
 
             }
@@ -115,6 +112,7 @@ namespace LectorFacturas
                     Cantidad = item.Conceptos.Concepto.Cantidad.ToString(),
                     Importe = item.Conceptos.Concepto.Importe.ToString(),
                     ValorUnitario = item.Conceptos.Concepto.ValorUnitario.ToString(),
+                    Fecha = item.Fecha.ToString("dd/MM/yyyy hh:mm:ss")
                 });
 
             }
@@ -133,9 +131,10 @@ namespace LectorFacturas
                         Importe = concepto.Importe,
                         Base = concepto.Impuestos?.Traslados?.Traslado?.Base,
                         ImporteIva = concepto.Impuestos?.Traslados?.Traslado?.Importe,
-                        TasaOCuota = concepto.Impuestos?.Traslados?.Traslado?.TasaOCuota
-                    });
+                        TasaOCuota = concepto.Impuestos?.Traslados?.Traslado?.TasaOCuota,
+                        Fecha = DateTime.Parse(item.Fecha).ToString("dd/MM/yyyy hh:mm:ss")
 
+                    });
             }
 
             foreach (var item in _translados4)
@@ -153,15 +152,16 @@ namespace LectorFacturas
                         Importe = concepto.Importe,
                         Base = concepto.Impuestos?.Traslados?.Traslado?.Base,
                         ImporteIva = concepto.Impuestos?.Traslados?.Traslado?.Importe,
-                        TasaOCuota = concepto.Impuestos?.Traslados?.Traslado?.TasaOCuota
+                        TasaOCuota = concepto.Impuestos?.Traslados?.Traslado?.TasaOCuota,
+                        Fecha = DateTime.Parse(item.Fecha).ToString("dd/MM/yyyy hh:mm:ss")
                     });
-
             }
 
             var datos2 = Utilidades.CombinarTablas(
                 new List<string> {
                     "Version",
                     "Folio",
+                    "Fecha",
                     "RFCEmisor",
                     "RFCReceptor",
                     "Descripcion",
@@ -172,9 +172,8 @@ namespace LectorFacturas
                     "ImporteIva",
                     "TasaOCuota"
                 },
-                lista
+                    lista
                 );
-
 
             GridView gridView = gridView4;
             gridView.OptionsView.ShowGroupPanel = true;
@@ -190,7 +189,7 @@ namespace LectorFacturas
                 gridView4.Columns[0].Summary.Clear();
                 gridView4.Columns[7].Summary.Clear();
                 gridView4.Columns[8].Summary.Clear();
-                gridView4.Columns[9].Summary.Clear();
+                gridView4.Columns[10].Summary.Clear();
 
                 GridColumnSummaryItem item1 = new GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Importe", "${0}");
                 GridColumnSummaryItem item2 = new GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "Base", "${0}");
@@ -199,22 +198,22 @@ namespace LectorFacturas
 
                 gridView4.Columns[7].Summary.Add(item1);
                 gridView4.Columns[8].Summary.Add(item2);
-                gridView4.Columns[9].Summary.Add(item3);
+                gridView4.Columns[10].Summary.Add(item3);
                 gridView4.Columns[0].Summary.Add(item4);
             }
         }
-        public async void LeerArchivos()
+        public void LeerArchivos()
         {
 
             if (openDialog.ShowDialog() == DialogResult.OK)
                 foreach (string file in openDialog.FileNames)
-                    await CargarDatos(file);
+                    CargarDatos(file);
 
             InicializarGrid();
             InicializarDetalles();
 
         }
-        public async Task CargarDatos(string file)
+        public void CargarDatos(string file)
         {
             CFDILector lector = new CFDILector();
             var objeto = lector.LeerFactura(file);
@@ -223,33 +222,21 @@ namespace LectorFacturas
                 if (lector.ObtenerVersion().Contains("3.3"))
                 {
                     if (!lector.EsTranslado())
-                    {
-                        Comprobante factura = objeto;
-                        _factura.Add(factura);
-                    }
+                        _factura.Add((Comprobante)objeto);
+
                     else
-                    {
-                        ComprobanteTranslado factura = objeto;
-                        _translados.Add(factura);
-                    }
+                        _translados.Add((ComprobanteTranslado)objeto);
                 }
 
                 if (lector.ObtenerVersion().Contains("4.0"))
                 {
                     if (!lector.EsTranslado())
-                    {
-                        Comprobante4 factura = objeto;
-                        _factura4.Add(factura);
-                    }
+                        _factura4.Add((Comprobante4)objeto);
 
                     else if (lector.EsTranslado())
-                    {
-                        ComprobanteTranslado4 factura = objeto;
-                        _translados4.Add(factura);
-                    }
+                        _translados4.Add((ComprobanteTranslado4)objeto);
                 }
             }
-
         }
 
         private void btn_examinar_Click(object sender, EventArgs e)
@@ -266,6 +253,7 @@ namespace LectorFacturas
             tabla.DataSource = null;
             tabla2.DataSource = null;
         }
+
     }
 }
 

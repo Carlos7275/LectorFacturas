@@ -25,7 +25,7 @@ namespace LectorFacturas.Clases
             try
             {
                 XDocument xmlDoc = XDocument.Load(url);
-                 _version = xmlDoc.Root.Attribute("Version").Value;
+                _version = xmlDoc.Root.Attribute("Version").Value;
 
                 XElement trasladoElement = xmlDoc.Descendants().FirstOrDefault(e => e.Name.LocalName == "Traslado");
                 _esTranslado = (trasladoElement != null);
@@ -45,54 +45,28 @@ namespace LectorFacturas.Clases
         }
         public dynamic LeerFactura(string url)
         {
+            if (!ComprobarArchivo(url)) return null;
 
-            if (this.ComprobarArchivo(url))
+            Type comprobanteType = null;
+
+            if (_version.Contains("3.3"))
             {
-                if (_version.Contains("3.3"))
-                {
-                    if (!_esTranslado)
-                    {
-                        XmlSerializer serializer = new XmlSerializer(typeof(LectorFacturas.Modelos.Factura.Comprobante));
-                        using (FileStream fs = new FileStream(url, FileMode.Open))
-                        {
-                            LectorFacturas.Modelos.Factura.Comprobante comprobante = (LectorFacturas.Modelos.Factura.Comprobante)serializer.Deserialize(fs);
-                            return comprobante;
-                        }
-                    }
-                    {
-                        XmlSerializer serializer = new XmlSerializer(typeof(ComprobanteTranslado));
-                        using (FileStream fs = new FileStream(url, FileMode.Open))
-                        {
-                            ComprobanteTranslado comprobante = (ComprobanteTranslado)serializer.Deserialize(fs);
-                            return comprobante;
-                        }
-                    }
-
-                }
-                else if (_version.Contains("4.0"))
-                {
-                    if (!_esTranslado)
-                    {
-                        XmlSerializer serializer = new XmlSerializer(typeof(Comprobante4));
-                        using (FileStream fs = new FileStream(url, FileMode.Open))
-                        {
-                            Comprobante4 comprobante = (Comprobante4)serializer.Deserialize(fs);
-                            return comprobante;
-                        }
-                    }
-                    else
-                    {
-                        XmlSerializer serializer = new XmlSerializer(typeof(ComprobanteTranslado4));
-                        using (FileStream fs = new FileStream(url, FileMode.Open))
-                        {
-                            ComprobanteTranslado4 comprobante = (ComprobanteTranslado4)serializer.Deserialize(fs);
-                            return comprobante;
-                        }
-                    }
-                }
-
+                comprobanteType = _esTranslado ? typeof(ComprobanteTranslado) : typeof(LectorFacturas.Modelos.Factura.Comprobante);
             }
-            return null;
+            else if (_version.Contains("4.0"))
+            {
+                comprobanteType = _esTranslado ? typeof(ComprobanteTranslado4) : typeof(Comprobante4);
+            }
+
+            if (comprobanteType == null) return null;
+
+            XmlSerializer serializer = new XmlSerializer(comprobanteType);
+
+            using (FileStream fs = new FileStream(url, FileMode.Open))
+            {
+                return serializer.Deserialize(fs);
+            }
         }
+
     }
 }

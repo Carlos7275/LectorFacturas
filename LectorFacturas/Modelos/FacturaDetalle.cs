@@ -16,7 +16,7 @@ namespace LectorFacturas.Modelos
         public string Cantidad { get; set; }
         public string ValorUnitario { get; set; }
         public string Importe { get; set; }
-
+        public string Fecha { get; set; }
         public string Base { get; set; }
         public string TasaOCuota { get; set; }
         public string ImporteIva { get; set; }

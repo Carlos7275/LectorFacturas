@@ -28,25 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            DevExpress.XtraSplashScreen.SplashScreenManager splashScreenManager1 = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::LectorFacturas.SplashScreen1), true, true, true);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openDialog = new System.Windows.Forms.OpenFileDialog();
-            this.unboundSource1 = new DevExpress.Data.UnboundSource(this.components);
-            this.unboundSource2 = new DevExpress.Data.UnboundSource(this.components);
-            this.tabla = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.btn_examinar = new DevExpress.XtraEditors.SimpleButton();
             this.btn_limpiar = new DevExpress.XtraEditors.SimpleButton();
-            ((System.ComponentModel.ISupportInitialize)(this.unboundSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unboundSource2)).BeginInit();
+            this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.tabla = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.tabla2 = new DevExpress.XtraGrid.GridControl();
+            this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
+            this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabla2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             this.SuspendLayout();
+            // 
+            // splashScreenManager1
+            // 
+            splashScreenManager1.ClosingDelay = 300;
             // 
             // openDialog
             // 
@@ -54,48 +61,6 @@
             this.openDialog.FileName = "openFileDialog1";
             this.openDialog.Filter = "|*.xml";
             this.openDialog.Multiselect = true;
-            // 
-            // tabla
-            // 
-            this.tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabla.Location = new System.Drawing.Point(12, 100);
-            this.tabla.MainView = this.gridView1;
-            this.tabla.Name = "tabla";
-            this.tabla.Size = new System.Drawing.Size(660, 242);
-            this.tabla.TabIndex = 9;
-            this.tabla.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1,
-            this.gridView3,
-            this.gridView2});
-            // 
-            // gridView1
-            // 
-            this.gridView1.GridControl = this.tabla;
-            this.gridView1.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
-            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SubTotal", null, "")});
-            this.gridView1.Name = "gridView1";
-            // 
-            // gridView3
-            // 
-            this.gridView3.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1});
-            this.gridView3.GridControl = this.tabla;
-            this.gridView3.Name = "gridView3";
-            this.gridView3.OptionsView.ShowFooter = true;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "gridColumn1";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            // 
-            // gridView2
-            // 
-            this.gridView2.GridControl = this.tabla;
-            this.gridView2.Name = "gridView2";
             // 
             // btn_examinar
             // 
@@ -117,38 +82,125 @@
             this.btn_limpiar.Text = "Limpiar Datos";
             this.btn_limpiar.Click += new System.EventHandler(this.btn_limpiar_Click);
             // 
+            // xtraScrollableControl1
+            // 
+            this.xtraScrollableControl1.Location = new System.Drawing.Point(341, 58);
+            this.xtraScrollableControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.xtraScrollableControl1.Name = "xtraScrollableControl1";
+            this.xtraScrollableControl1.Size = new System.Drawing.Size(306, 29);
+            this.xtraScrollableControl1.TabIndex = 13;
+            // 
+            // xtraTabControl1
+            // 
+            this.xtraTabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.xtraTabControl1.Location = new System.Drawing.Point(39, 68);
+            this.xtraTabControl1.Margin = new System.Windows.Forms.Padding(2);
+            this.xtraTabControl1.Name = "xtraTabControl1";
+            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
+            this.xtraTabControl1.Size = new System.Drawing.Size(590, 247);
+            this.xtraTabControl1.TabIndex = 14;
+            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.xtraTabPage1,
+            this.xtraTabPage2});
+            // 
+            // xtraTabPage1
+            // 
+            this.xtraTabPage1.Controls.Add(this.tabla);
+            this.xtraTabPage1.Margin = new System.Windows.Forms.Padding(2);
+            this.xtraTabPage1.Name = "xtraTabPage1";
+            this.xtraTabPage1.Size = new System.Drawing.Size(588, 223);
+            this.xtraTabPage1.Text = "Facturas";
+            // 
+            // tabla
+            // 
+            this.tabla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabla.Location = new System.Drawing.Point(18, 15);
+            this.tabla.MainView = this.gridView1;
+            this.tabla.Name = "tabla";
+            this.tabla.Size = new System.Drawing.Size(552, 164);
+            this.tabla.TabIndex = 11;
+            this.tabla.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.GridControl = this.tabla;
+            this.gridView1.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SubTotal", null, "")});
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowFooter = true;
+            // 
+            // xtraTabPage2
+            // 
+            this.xtraTabPage2.Controls.Add(this.tabla2);
+            this.xtraTabPage2.Margin = new System.Windows.Forms.Padding(2);
+            this.xtraTabPage2.Name = "xtraTabPage2";
+            this.xtraTabPage2.Size = new System.Drawing.Size(588, 223);
+            this.xtraTabPage2.Text = "Facturas-Detalle";
+            // 
+            // tabla2
+            // 
+            this.tabla2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabla2.Location = new System.Drawing.Point(20, 18);
+            this.tabla2.MainView = this.gridView4;
+            this.tabla2.Name = "tabla2";
+            this.tabla2.Size = new System.Drawing.Size(552, 164);
+            this.tabla2.TabIndex = 12;
+            this.tabla2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView4});
+            // 
+            // gridView4
+            // 
+            this.gridView4.GridControl = this.tabla2;
+            this.gridView4.GroupSummary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridGroupSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SubTotal", null, "")});
+            this.gridView4.Name = "gridView4";
+            this.gridView4.OptionsView.ShowFooter = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 370);
+            this.ClientSize = new System.Drawing.Size(694, 323);
+            this.Controls.Add(this.xtraTabControl1);
+            this.Controls.Add(this.xtraScrollableControl1);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_examinar);
-            this.Controls.Add(this.tabla);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("Form1.IconOptions.Image")));
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.SurfaceMaterial = DevExpress.XtraEditors.SurfaceMaterial.Acrylic;
             this.Text = "Lector de Facturas";
-            ((System.ComponentModel.ISupportInitialize)(this.unboundSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unboundSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
+            this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabla)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabla2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.OpenFileDialog openDialog;
-        private DevExpress.Data.UnboundSource unboundSource1;
-        private DevExpress.Data.UnboundSource unboundSource2;
+        private DevExpress.XtraEditors.SimpleButton btn_examinar;
+        private DevExpress.XtraEditors.SimpleButton btn_limpiar;
+        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
+        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
         private DevExpress.XtraGrid.GridControl tabla;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.SimpleButton btn_examinar;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraEditors.SimpleButton btn_limpiar;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
+        private DevExpress.XtraGrid.GridControl tabla2;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
     }
 }
 

@@ -51,3 +51,4 @@ C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorF
 C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\bin\Debug\DevExpress.XtraTreeList.v22.2.xml
 C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\bin\Debug\DevExpress.Office.v22.2.Core.xml
 C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\bin\Debug\DevExpress.BonusSkins.v22.2.dll
+C:\Users\carlo\OneDrive\Documentos\GitHub\ComputoEnlaNube\LectorFacturas\LectorFacturas\obj\Debug\LectorFacturas.SplashScreen1.resources
